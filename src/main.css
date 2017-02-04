@@ -13,7 +13,7 @@ margin: 0;
 padding: 0;
 font-weight: 200;
 -webkit-font-smoothing: antialiased;
--wos-osx-font-smoothing:grayscale;
+-moz-osx-font-smoothing:grayscale;
 }
 
 h1,h2,h3,h4{
@@ -77,30 +77,25 @@ padding: 30px 25px;
 @@media only screen and (max-device-width:420px){
   .header{
     background-size: auto 100%;
-
   }
-
 }
 
 .header:before{
-  background: rgba(0,0,0,0.7);
+  background: rgba(0,0,0,.7);
   bottom: 0;
   content: ' ';
   display: block;
-  left:0
+  left:0;
   position:absolute;
   right: 0;
   top:0;
   z-index: 1;
-
 }
 
-.header *{
-
+.header * {
 position: relative;
 z-index: 2;
 text-shadow: 1px 1px 10px black;
-
 }
 
 .header h1{
